@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amazônia Viva — Conheça, proteja e preserve a fauna da maior floresta tropical do mundo.">
+    <title>🌿 Amazônia Viva — Fauna da Amazônia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== BARRA DE PROGRESSO ==================== -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Amazônia Viva</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#fauna">Fauna</a></li>
+                    <li><a href="#demo">App</a></li>
+                    <li><a href="#interacao">Interação</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main>
+
+        <!-- ---------- SEÇÃO: HERO ---------- -->
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="leaf-particles" id="leafParticles"></div>
+            <div class="container hero-content">
+                <span class="badge">🌎 Patrimônio Natural do Mundo</span>
+                <h1 class="hero-title">
+                    A <span class="gradient-text">Fauna da Amazônia</span><br>
+                    em um só lugar
+                </h1>
+                <p class="hero-subtitle">
+                    Conheça, proteja e preserve as espécies mais incríveis da maior floresta tropical do planeta.
+                    Uma jornada pela biodiversidade que sustenta a vida na Terra.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#fauna" class="btn btn-primary">
+                        <i class="fa-solid fa-paw"></i> Explorar a Fauna
+                    </a>
+                    <a href="#interacao" class="btn btn-outline">
+                        <i class="fa-solid fa-hand-holding-heart"></i> Eu quero ajudar
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3 data-count="40000">0</h3>
+                        <p>Espécies de plantas</p>
+                    </div>
+                    <div class="stat">
+                        <h3 data-count="1300">0</h3>
+                        <p>Espécies de aves</p>
+                    </div>
+                    <div class="stat">
+                        <h3 data-count="400">0</h3>
+                        <p>Espécies de mamíferos</p>
+                    </div>
+                    <div class="stat">
+                        <h3 data-count="3000">0</h3>
+                        <p>Espécies de peixes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO: SOBRE ---------- -->
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Sobre a Amazônia</span>
+                    <h2>O pulmão do mundo precisa de <span class="gradient-text">voz</span></h2>
+                    <p>A maior floresta tropical do planeta abriga 1 em cada 10 espécies conhecidas.</p>
+                </div>
+                <div class="sobre-content">
+                    <div class="sobre-image">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=80"
+                             alt="Floresta Amazônica">
+                        <div class="floating-card">
+                            <i class="fa-solid fa-tree"></i>
+                            <div>
+                                <strong>5,5 milhões</strong>
+                                <span>km² de floresta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sobre-text">
+                        <h3>Por que proteger é urgente</h3>
+                        <p>
+                            A Amazônia abriga mais de <strong>30 milhões de pessoas</strong> e é o lar de
+                            uma biodiversidade sem igual no planeta. Cada espécie ameaçada representa
+                            uma perda irreparável para o equilíbrio ecológico global.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> 60% da floresta está em território brasileiro</li>
+                            <li><i class="fa-solid fa-check"></i> 17% da floresta já foi desmatada</li>
+                            <li><i class="fa-solid fa-check"></i> Mais de 2.000 espécies em risco de extinção</li>
+                            <li><i class="fa-solid fa-check"></i> Cada árvore derrubada afeta toda a cadeia</li>
+                        </ul>
+                        <a href="#impacto" class="btn btn-primary">
+                            <i class="fa-solid fa-chart-line"></i> Ver Impacto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO: FAUNA (GALERIA) ---------- -->
+        <section id="fauna" class="fauna">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Fauna</span>
+                    <h2>Conheça os <span class="gradient-text">guardiões da floresta</span></h2>
+                    <p>Espécies únicas que habitam a Amazônia — e que dependem de nós para sobreviver.</p>
+                </div>
+
+                <div class="fauna-grid">
+
+                    <div class="fauna-card reveal">
+                        <div class="fauna-img">
+                            <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=600&q=80" alt="Onça-pintada">
+                            <span class="fauna-status critico">Criticamente em Perigo</span>
+                        </div>
+                        <div class="fauna-info">
+                            <h3><i class="fa-solid fa-paw"></i> Onça-pintada</h3>
+                            <p>Maior felino das Américas. Simboliza a força da floresta, mas perdeu 50% do seu território.</p>
+                        </div>
+                    </div>
+
+                    <div class="fauna-card reveal">
+                        <div class="fauna-img">
+                            <img src="https://images.unsplash.com/photo-1591608971362-f08b2a75731a?w=600&q=80" alt="Arara-azul">
+                            <span class="fauna-status vulneravel">Vulnerável</span>
+                        </div>
+                        <div class="fauna-info">
+                            <h3><i class="fa-solid fa-dove"></i> Arara-azul</h3>
+                            <p>Símbolo da Amazônia. Sua beleza única fez dela alvo do tráfico, quase levando à extinção.</p>
+                        </div>
+                    </div>
+
+                    <div class="fauna-card reveal">
+                        <div class="fauna-img">
+                            <img src="https://images.unsplash.com/photo-1607157517932-6c40c9eb2457?w=600&q=80" alt="Boto-cor-de-rosa">
+                            <span class="fauna-status vulneravel">Vulnerável</span>
+                        </div>
+                        <div class="fauna-info">
+                            <h3><i class="fa-solid fa-fish"></i> Boto-cor-de-rosa</h3>
+                            <p>Mamífero aquático único dos rios amazônicos. Inteligente e misterioso.</p>
+                        </div>
+                    </div>
+
+                    <div class="fauna-card reveal">
+                        <div class="fauna-img">
+                            <img src="https://images.unsplash.com/photo-1559675123-03e82a3b6a6b?w=600&q=80" alt="Preguiça">
+                            <span class="fauna-status pouco-preocupante">Pouco Preocupante</span>
+                        </div>
+                        <div class="fauna-info">
+                            <h3><i class="fa-solid fa-leaf"></i> Preguiça-real</h3>
+                            <p>Mestre da calma. Vive nas copas das árvores e é essencial para a dispersão de sementes.</p>
+                        </div>
+                    </div>
+
+                    <div class="fauna-card reveal">
+                        <div class="fauna-img">
+                            <img src="https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=600&q=80" alt="Tucano">
+                            <span class="fauna-status pouco-preocupante">Pouco Preocupante</span>
+                        </div>
+                        <div class="fauna-info">
+                            <h3><i class="fa-solid fa-crow"></i> Tucano-toco</h3>
+                            <p>Seu bico colorido é um dos ícones da floresta. Fundamental na dispersão de sementes.</p>
+                        </div>
+                    </div>
+
+                    <div class="fauna-card reveal">
+                        <div class="fauna-img">
+                            <img src="https://images.unsplash.com/photo-1591892092069-8e15c11e1d02?w=600&q=80" alt="Macaco-aranha">
+                            <span class="fauna-status em-perigo">Em Perigo</span>
+                        </div>
+                        <div class="fauna-info">
+                            <h3><i class="fa-solid fa-tree"></i> Macaco-aranha</h3>
+                            <p>Ágil e social. Vive em grupos e depende de grandes áreas preservadas para sobreviver.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="fauna-hint">
+                    💡 <strong>Dica:</strong> clique em cada card para saber mais sobre a espécie.
+                </p>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO: DEMONSTRAÇÃO DO APP ---------- -->
+        <section id="demo" class="demo">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Demonstração</span>
+                    <h2>O app <span class="gradient-text">Amazônia Viva</span></h2>
+                    <p>Uma plataforma para conhecer, monitorar e proteger a fauna em tempo real.</p>
+                </div>
+                <div class="demo-content">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="phone-header">
+                                <i class="fa-solid fa-bars"></i>
+                                <span>Amazônia Viva</span>
+                                <i class="fa-solid fa-bell"></i>
+                            </div>
+                            <div class="phone-body">
+                                <div class="phone-greeting">
+                                    <h4>Bem-vindo, guardião 🌿</h4>
+                                    <p>Você já protegeu 7 espécies</p>
+                                </div>
+                                <div class="phone-card">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div>
+                                        <strong>Onça avistada</strong>
+                                        <span>Reserva do Rio Negro · há 2h</span>
+                                    </div>
+                                </div>
+                                <div class="phone-card active">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <div>
+                                        <strong>Área protegida</strong>
+                                        <span>Você fez uma doação de R$ 30</span>
+                                    </div>
+                                </div>
+                                <div class="phone-progress">
+                                    <span>Meta mensal de proteção</span>
+                                    <div class="bar"><div class="bar-fill"></div></div>
+                                    <small>75% concluído</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-text">
+                        <h3>Tecnologia a serviço da floresta</h3>
+                        <p>
+                            O app conecta cientistas, comunidades ribeirinhas e cidadãos do mundo todo
+                            em uma rede de proteção da fauna amazônica. Veja como funciona:
+                        </p>
+                        <div class="steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <div>
+                                    <strong>Explore espécies</strong>
+                                    <p>Descubra a fauna com fotos, sons e curiosidades.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <div>
+                                    <strong>Apoie projetos</strong>
+                                    <p>Doações diretas para ONGs que atuam na floresta.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <div>
+                                    <strong>Acompanhe o impacto</strong>
+                                    <p>Veja em tempo real as mudanças que você gerou.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#interacao" class="btn btn-primary">
+                            <i class="fa-solid fa-play"></i> Quero testar o app
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO: INTERAÇÃO COM A PLATEIA ---------- -->
+        <section id="interacao" class="interacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Interação</span>
+                    <h2>E você, <span class="gradient-text">o que pensa?</span></h2>
+                    <p>Responda à pergunta abaixo e veja os resultados em tempo real.</p>
+                </div>
+
+                <div class="poll-container">
+                    <div class="poll-question">
+                        <i class="fa-solid fa-question-circle"></i>
+                        <h3>Você acredita que ainda é possível salvar a fauna da Amazônia?</h3>
+                    </div>
+
+                    <div class="poll-options" id="pollOptions">
+                        <button class="poll-option" data-option="sim">
+                            <i class="fa-solid fa-thumbs-up"></i> Sim, com atitude!
+                        </button>
+                        <button class="poll-option" data-option="talvez">
+                            <i class="fa-solid fa-question"></i> Talvez, depende de nós
+                        </button>
+                        <button class="poll-option" data-option="nao">
+                            <i class="fa-solid fa-thumbs-down"></i> Acredito que já é tarde
+                        </button>
+                    </div>
+
+                    <div class="poll-results" id="pollResults">
+                        <div class="poll-result">
+                            <div class="poll-result-header">
+                                <span>Sim, com atitude!</span>
+                                <span class="poll-percent" data-percent="sim">0%</span>
+                            </div>
+                            <div class="poll-bar"><div class="poll-fill" data-fill="sim"></div></div>
+                        </div>
+                        <div class="poll-result">
+                            <div class="poll-result-header">
+                                <span>Talvez, depende de nós</span>
+                                <span class="poll-percent" data-percent="talvez">0%</span>
+                            </div>
+                            <div class="poll-bar"><div class="poll-fill" data-fill="talvez"></div></div>
+                        </div>
+                        <div class="poll-result">
+                            <div class="poll-result-header">
+                                <span>Acredito que já é tarde</span>
+                                <span class="poll-percent" data-percent="nao">0%</span>
+                            </div>
+                            <div class="poll-bar"><div class="poll-fill" data-fill="nao"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contador interativo -->
+                <div class="cta-interaction">
+                    <p>🌱 <strong>Faça parte:</strong> cada clique aqui representa uma pessoa que escolhe proteger a Amazônia.</p>
+                    <button class="btn btn-primary btn-join" id="joinBtn">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        Eu quero proteger a fauna
+                        <span class="join-count" id="joinCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- SEÇÃO: SLIDE FINAL DE IMPACTO ---------- -->
+        <section id="impacto" class="impacto">
+            <div class="container">
+                <div class="impacto-card">
+                    <div class="impacto-glow"></div>
+                    <span class="section-tag light">Reflexão Final</span>
+                    <h2>
+                        Quando a última <span class="gradient-text">onça-pintada</span><br>
+                        desaparecer, o que restará?
+                    </h2>
+                    <p class="impacto-text">
+                        A fauna da Amazônia não é só um tesouro natural — é um espelho de nossas
+                        escolhas. Cada espécie que desaparece é uma página da história da Terra
+                        que se apaga para sempre. Proteger a floresta é proteger a nós mesmos.
+                    </p>
+
+                    <div class="impacto-grid">
+                        <div class="impacto-item">
+                            <i class="fa-solid fa-paw"></i>
+                            <h4>+2.000</h4>
+                            <p>Espécies ameaçadas</p>
+                        </div>
+                        <div class="impacto-item">
+                            <i class="fa-solid fa-tree"></i>
+                            <h4>-17%</h4>
+                            <p>Floresta já perdida</p>
+                        </div>
+                        <div class="impacto-item">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <h4>+10%</h4>
+                            <p>Toda a biodiversidade do planeta</p>
+                        </div>
+                    </div>
+
+                    <blockquote class="impacto-quote">
+                        "Não herdamos a Amazônia de nossos antepassados. Nós a tomamos emprestada de nossos filhos."
+                    </blockquote>
+
+                    <div class="impacto-buttons">
+                        <a href="#interacao" class="btn btn-primary">
+                            <i class="fa-solid fa-hand-holding-heart"></i> Fazer minha parte
+                        </a>
+                        <a href="#home" class="btn btn-outline">
+                            <i class="fa-solid fa-rotate-left"></i> Recomeçar a Jornada
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Amazônia Viva</span>
+                    </div>
+                    <p>Conhecimento, proteção e ação pela maior floresta tropical do mundo.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#fauna">Fauna</a></li>
+                        <li><a href="#impacto">Impacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Redes Sociais</h4>
+                    <div class="social">
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amazônia Viva. Feito com 💚 para proteger a floresta.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal de detalhes da espécie -->
+    <div class="modal" id="speciesModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Fechar">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <img id="modalImg" src="" alt="">
+            <div class="modal-body">
+                <h3 id="modalTitle"></h3>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
